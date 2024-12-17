@@ -29,9 +29,37 @@
 		348AADF32D11ABC800B46EDA /* PlatformSpecificViewsFilesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlatformSpecificViewsFilesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		348AAE122D11AD7100B46EDA /* Exceptions for "PlatformSpecificViewsFilesUITests" folder in "PlatformSpecificViewsFilesTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PlatformSpecificViewsFilesTests.swift,
+			);
+			target = 348AADE82D11ABC800B46EDA /* PlatformSpecificViewsFilesTests */;
+		};
+		348AAE132D11AD7100B46EDA /* Exceptions for "PlatformSpecificViewsFilesUITests" folder in "PlatformSpecificViewsFilesUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				PlatformSpecificViewsFilesTests.swift,
+			);
+			target = 348AADF22D11ABC800B46EDA /* PlatformSpecificViewsFilesUITests */;
+		};
+		348AAE142D11ADE700B46EDA /* Exceptions for "PlatformSpecificViewsFiles" folder in "PlatformSpecificViewsFiles" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			platformFiltersByRelativePath = {
+				View/iOS/Home.swift = (ios, );
+				View/macOS/Home.swift = (macos, );
+			};
+			target = 348AADD72D11ABC600B46EDA /* PlatformSpecificViewsFiles */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		348AADDA2D11ABC600B46EDA /* PlatformSpecificViewsFiles */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				348AAE142D11ADE700B46EDA /* Exceptions for "PlatformSpecificViewsFiles" folder in "PlatformSpecificViewsFiles" target */,
+			);
 			path = PlatformSpecificViewsFiles;
 			sourceTree = "<group>";
 		};
@@ -42,6 +70,10 @@
 		};
 		348AADF62D11ABC800B46EDA /* PlatformSpecificViewsFilesUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				348AAE122D11AD7100B46EDA /* Exceptions for "PlatformSpecificViewsFilesUITests" folder in "PlatformSpecificViewsFilesTests" target */,
+				348AAE132D11AD7100B46EDA /* Exceptions for "PlatformSpecificViewsFilesUITests" folder in "PlatformSpecificViewsFilesUITests" target */,
+			);
 			path = PlatformSpecificViewsFilesUITests;
 			sourceTree = "<group>";
 		};
